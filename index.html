@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Nyshanbek" content="Nyshanbel Raimberdi">
+    <title>Главная страница</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,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">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu-list.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="font-weight: 700;">ВКУСНЫЕ МОМЕНТЫ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active-nav" >
+                    <a class="nav-link active" aria-current="page" href="#" style="color: balck;">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu-list.html">Категория</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu-list.html">Меню</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="scrollToReservation()">Бронь столов</a>
+                </li>
+                <li class="nav-item" onclick="scrollToContact()">
+                    <a class="nav-link" href="#" onclick="scrollToContact()">Контакты</a>
+                </li>
+                <li class="nav-item" onclick="scrollToBottom()">
+                    <a class="nav-link disabled" aria-disabled="true">Инфо</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!--Заголовок-->
+<div class="container-box">
+    <img src="" alt="" class="img-header">
+    <div class="header-box">
+        <h1 style="position: relative;">Приветствуем вас в уникальном мире вкуса и уюта!</h1><br>
+        <span style="flex-wrap: wrap; display: flex; max-width: 90%;">Насладитесь изысканной кухней и атмосферой изысканной <br> гастрономического путешествия прямо здесь и сейчас</span>
+    </div>
+</div>
+
+
+
+<!--Просмотр Меню-->
+<div class="view-menu_container"> 
+    <div class="view-menu">
+
+        <img src="https://dedi-rest.ru/uploads/abouts/Tuw4EQ9eobaBIwLttchMT7sEsNfHApb5xjECs8IM.jpg" alt="">
+
+        <div class="view-menu_header">
+            
+                <span class="pages_txt1">Добро пожаловать в наше виртуальное кулинарное приключение!</span>
+                
+                <span class="pages_txt2">Откройте двери в мир вкусов и ароматов нашего ресторана, представленные в нашем изысканном меню. <br> Приготовьтесь к гастрономическому путешествию, которое оставит незабываемые впечатления. И не забывайте, что ваше удовольствие для нас - важнейшая ценность.
+                    Прогуляйтесь по страницам нашего меню, выберите свои любимые блюда и доверьтесь нам, чтобы превратить ваш визит в наш ресторан в незабываемый кулинарный опыт.
+                    Наши шеф-повары тщательно подбирают самые свежие и качественные ингредиенты, чтобы каждое блюдо, представленное на страницах нашего меню, приносило вам настоящее удовольствие.
+                    Откройте для себя богатство наших кулинарных традиций, от классических блюд до уникальных шедевров, созданных специально для вас.
+                </span>
+                
+                <span style="margin-bottom: 10px;">Вы можете посмотреть все наши меню нажав кнопку </span>
+            
+            
+        </div>
+        
+        <a href="menu-list.html" class="animated-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+            <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+            </svg>
+            <span class="text">ПОСМОТРЕТЬ МЕНЮ</span>
+            <span class="circle"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+            <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+            </svg>
+        </a>
+        
+    </div>
+</div>
+
+
+
+<!--Спецпредложение-->
+<div class="special-container1">
+    <div class="special-container">
+        <div class="special-offers_header-box">
+            <span class="special-offers-header">Спецпредложения</span>
+        </div>
+
+
+        <div class="special-box">
+            <div class="speacial-card-box">
+               
+                <div class="menu-cards" data-name="Манты" data-price="260">
+                    <div class="menu-img-box">
+                        <img class="menu-img" src="https://s1.eda.ru/StaticContent/Photos/120424122748/211227223840/p_O.jpg" alt="">
+                    </div>
+                    <div class="menu-all-text-box">
+                      <div class="menu-name-box">
+                          <span class="menu-name">Манты</span>
+                      </div>
+                      <div class="menu-text-box">
+                          <p class="menu-text">Приготовленные на пару, из тонкого домашнего теста и рубленного мяса.</p>
+                      </div>
+                      <div class="menu-price-box">
+                          <span class="price_for-all-menu">260 cом / 1 порция</span>
+                          
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="menu-cards" data-name="Курица запеченная" data-price="850">
+                    <div class="menu-img-box">
+                        <img class="menu-img" src="
+                        " alt="">
+                    </div>
+                    <div class="menu-all-text-box">
+                        <div class="menu-name-box">
+                            <span class="menu-name">Шакарап</span>
+                        </div>
+                        <div class="menu-text-box">
+                            <p class="menu-text">Огурцы, помидор, репчатый лук и свежая кинза.</p>
+                        </div>
+                        <div class="menu-price-box">
+                            <span class="price_for-all-menu">850 cом</span>
+                            
+                        </div>
+                    </div>
+                  </div>
+    
+                  <div class="menu-cards" data-name="Винегред" data-price="400">
+                    <div class="menu-img-box">
+                        <img class="menu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiBo2suABRFdxr6AvYXG_jZLMoDBt8lT1-iQ&s" alt="">
+                    </div>
+                    <div class="menu-all-text-box">
+                      <div class="menu-name-box">
+                          <span class="menu-name">Винегред</span>
+                      </div>
+                      <div class="menu-text-box">
+                          <p class="menu-text">Свекла, картошка, зелень </p>
+                      </div>
+                      <div class="menu-price-box">
+                          <span class="price_for-all-menu">210 cом</span>
+                          
+                      </div>
+                    </div>
+                  </div>
+                
+                
+            </div>
+
+
+            <div class="view-menu_spacial-box">
+                <a href="menu-list.html" class="animated-button view-menu_in-spacial">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                    <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                    </svg>
+                    <span class="text">БОЛЬШЕ</span>
+                    <span class="circle"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                    <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!--Популярные-->
+<div class="popular-food_container">
+    <div class="popular-food_box">
+
+
+        <div class="popular-foods">
+            <div class="container-popular">
+                <div class="card_box">
+                    <img class="popular-foods-img" src="" alt="">
+                    <div class="popular-foods-bottom">
+                        <span></span>
+                    </div>
+                    <p class="menu-name popular-name-menu">Беш-бармак</p>
+                    <p class="ppppp">Домащняя лапша с мелко нарезанным кониным мясом</p>
+                    
+                </div>
+            </div>
+            <div class="container-popular">
+                <div class="card_box">
+                    <img class="popular-foods-img" src="" alt="">
+                    <div class="popular-foods-bottom">
+                        <span></span>
+                    </div>
+                    <p class="menu-name popular-name-menu">Куурдак</p>
+                    <p class="ppppp">Жаренное мясо с картошкой</p>
+                </div>
+            </div>
+            <div class="container-popular">
+                <div class="card_box">
+                    <img class="popular-foods-img" src="" alt="">
+                    <div class="popular-foods-bottom">
+                        <span></span>
+                    </div>
+                    <p class="menu-name popular-name-menu">Макаронс</p>
+                    <p class="ppppp">Французский Макаронс сделанной из миндальной муки, сахарной пудки </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!--Кейтеринг-->
+<div class="katering-box">
+
+    <div class="katering-header">
+        <br>
+        <p class="katering-header_p">Отпразднуйте в одном из самых хороших ресторанов</p>
+        <i class="fa-solid fa-check"></i>
+    </div>
+
+    <div class="katerings">
+        <div class="katering-set">
+            <img width="34" height="34" src="https://img.icons8.com/3d-fluency/94/birthday--v1.png" alt="birthday--v1"/>
+            <span class="katering-txt">День рождения</span>
+        </div>
+        <div class="katering-set">
+            <img width="38" height="38" src="https://img.icons8.com/plasticine/100/wine-glass.png" alt="wine-glass"/>
+            <span class="katering-txt">Корпоративное<br>мероприятие</span>
+        </div>
+        <div class="katering-set">
+            <img width="38" height="34" src="https://img.icons8.com/color/48/baby-shower.png" alt="baby-shower"/>
+            <span class="katering-txt">Гендер пати</span>
+        </div>
+        <div class="katering-set">
+            <img width="34" height="34" src="https://img.icons8.com/fluency/48/christmas-tree--v1.png" alt="christmas-tree--v1"/>
+            <span class="katering-txt">Новый год</span>
+        </div>
+    </div>
+
+    <!--Нижний текст-->
+    <div class="katering_under-title-box">
+        <div class="katering-header">
+            <span class="txt-logo">Кeйтеринг 
+                <span class="txt-logo-2"> Вкусные моменты</span>
+            </span>
+            <br>
+        </div>
+        <p class="katering_under-title">Наша команда опытных поваров с любовью готовит блюда из свежих и высококачественных ингредиентов, чтобы удовлетворить самые изысканные вкусы. Независимо от того, проводите ли вы свадьбу, корпоративное мероприятие или приватную вечеринку, мы создадим индивидуальное меню, отражающее ваш стиль и предпочтения. Вместе мы сделаем ваше событие по-настоящему незабываемым!</p>
+    </div>
+    
+</div>
+
+
+
+<!--Бронирование столов-->
+<div class="container-reszerv" id="reservation-box">
+    <div class="reservation">
+        <img src="https://www.forumdaily.com/wp-content/uploads/2017/03/Depositphotos_2099183_m-2015.jpg" alt="Table" class="table-image">
+        <div class="reservation-details">
+            <h2 class="reserv-head">Бронирование столика</h2>
+            <form id="reservation-form" action="/submit-reservation" method="POST">
+                <div class="form-group">
+                    <label class="label-for-reserv" for="table">Место:</label>
+                    <select id="table" name="table">
+                        <option value="table1">Столик 1</option>
+                        <option value="table2">Столик 2</option>
+                        <option value="table3">Столик 4</option>
+                        <option value="table3">Столик 5</option>
+                        <option value="table3">Столик 6</option>
+                        <option value="table3">Столик 7</option>
+                        <option value="table3">Столик 8</option>
+                        <option value="table3">Столик 9</option>
+                        <option value="table3">Столик 10</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="number">Количество человека:</label>
+                    <input type="number" id="number" name="number">
+                </div>
+                <div class="form-group">
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="time">Время:</label>
+                    <input type="time" id="time" name="time">
+                </div>
+                <button class="button-for-reserv" type="submit">Забронировать</button>
+            </form>
+        </div>
+    </div>
+</div>
+  
+
+
+<!--Акция-->
+<div class="sale-container" id="sale-container">
+    <div class="sale-box2">
+
+        <div class="sale-box">
+            <div class="sale-header-box">
+                <span class="sale-header">Скидка на 25% на меню</span>
+                <span class="sale-header-sub">C понедельника по пятницу</span>
+                <span class="sale-header-sub" style="color: #54be0e; font-weight: 600;">С 11:00 до 20:00</span>
+            </div>
+        </div>
+
+        <main class="sale-special-offer_container">
+            <section id="sale-special-offer_box">
+                <h2>Специальное предложение со скидкой</h2>
+                <p>Получите скидку на создание качественного сайта для вашего ресторана.</p>
+                <ul style="list-style-type:bumber;">
+                    <li >При заказа плова, шакарап и кола бесплатно</li>
+                </ul>
+
+                <span>Кроме этого еще 5 ежедневных скидок</span>
+                <ul>
+
+                    <li style="list-style-type: none;"></li>
+                </ul>
+                <br>
+                <button id="claim-offer">Получить Скидку</button>
+            </section>
+
+            <section id="menu-spacial-sale">
+                <h2 class="section_h2" style="text-align: center; padding-bottom: 30px;">Меню Ежедневных Скидок</h2>
+                <ul id="menu-list_spacial-sale">
+                    <li class="menu-item_spacial-sale">
+                        <img class="img-spacial-sale" src="https://menu2go.ru/images/food/664/664_888_20231103160737_1482.jpg" alt="Пицца">
+                        <span class="price-spacial-sale" data-price="350" style="display: none;">350 сом.</span>
+                    </li>
+                    <li class="menu-item_spacial-sale">
+                        <img class="img-spacial-sale" src="#" alt="Беш-бармак">
+                        <span class="price-spacial-sale" data-price="315" style="display: none;">315 сом.</span>
+                    </li>
+                    <li class="menu-item_spacial-sale">
+                        <img class="img-spacial-sale" src="/storage/emulated/0/Download/140430115517-06-comfort-foods.jpg" alt="Спагетти с куриными фрикадельками">
+                        <span class="price-spacial-sale" data-price="360" style="display: none;">360 сом.</span>
+                    </li>
+                    <li class="menu-item_spacial-sale">
+                        <img class="img-spacial-sale" src="/storage/emulated/0/Download/140430115517-06-comfort-foods.jpg" alt="Салат Греческий">
+                        <span class="price-spacial-sale" data-price="225" style="display: none;">225 сом.</span>
+                    </li>
+                    <li class="menu-item_spacial-sale">
+                        <img class="img-spacial-sale" src="/storage/emulated/0/Download/140430115517-06-comfort-foods.jpg" alt="Форель запеченная">
+                        <span class="price-spacial-sale" data-price="1275" style="display: none;">1275 сом.</span>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+    </div>
+</div>
+
+
+
+<!--Инфо-->
+<div class="info-page_container">
+
+    <div class="info-page_box">
+        <div class="info-page_header">
+            <span style="font-weight: 600;">О нас</span>
+        </div>
+        <div class="info-page_pr">
+            <p><span style="font-weight: 500;">Наш подход к кулинарии:</span>
+                <br>
+                Мы верим в использование только свежих ингредиентов высочайшего качества. Наши шеф-повары с любовью создают каждое блюдо, чтобы порадовать ваш вкус и внести нотку радости в ваш опыт.</p>
+                <br>
+                <p><span style="font-weight: 500;">Наша миссия:</span>
+                    <br>
+                    В ресторан ВКУСНЫЕ МОМЕНТЫ мы стремимся не просто кушать, а создавать впечатления. Наша миссия - предложить вам не только великолепные блюда, но и уютную атмосферу, которая оставит долговременное впечатление.</p>
+        </div>
+    </div>
+
+
+<hr style="color: #e7e7e7;">
+
+    <div class="info-page_box" id="contact-page">
+
+        <div class="info-page_header" id="info-page_header">
+            <span style="font-weight: 600;">Наш контактный номер</span>
+        </div>
+
+        <div class="info-page_pr">
+            <a style="font-weight: 400; font-style: italic;">Обращение по вопросу по этим номерам</a>
+                <br>
+            <a  href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+                +996 999 24 22 85
+            </a>
+            <br>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+                +996 509 24 22 85
+            </a>
+            <br>
+
+
+            <p class="page-contact">
+                <br>
+                <br>
+                <a style="font-style: italic;">Также мы в соц. сетях:</a>
+                <br>
+                <br>
+                <svg class="info-page_icons" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg>
+                <span class="info-page_whatsapp">WhatsApp
+                    <a style="color: #d8c40d;" href="https://web.whatsapp.com/+996999242285">+996 999 24 22 85</a>
+                </span>
+            </p>
+
+            <p class="page-contact">
+                <svg  style="color: blue;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                    <path  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+                </svg>
+                <span class="info-page_telegram">Telegram
+                    <a style="color: #d8c40d;" href="https://t.me/+996999242285">+996 999 24 22 85</a>
+                </span>
+            </p>
+
+            <p class="page-contact">
+                <svg style="color: #6f28c0;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+                <span class="info-page_instagram">Instagram
+                    <a style="color: #d8c40d;" href="https://instagram.com/raimberdinn">@raimberdinn</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--Отзыв рейтинг-->
+<div class="rating_container">
+    <span style="font-size: 30px;">Отзыв рейтинг</span>
+
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5" title="Отлично">5</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4" title="Хорошо">4</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3" title="Неплохо">3</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2" title="Плохо">2</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1" title="Ужасно">1</label>
+    </div> 
+</div>
+
+
+
+<!--Политика конфиденциальности-->
+<div class="policy-confidense_container">
+
+    <h3 class="policy-confidens_header">Политика конфиденциальности</h3>
+
+    <footer class="policy-confidens_box">
+
+        <div class="policy-confidens_p">
+            <p>Вся информация, представленная на этом сайте защищена авторским правом. <span>Все права защищены.</span> <br></p>
+            <p>Для любых вопросов по поводу нашей политики конфиденциальности, пожалуйста, свяжитесь с нами по электронной почте: <a class="policy-confidens_link" href="https://mail.google.com/mail/u/0/#inbox?compose=CrpPbDzFFpXnDqvvGqvslhTpFqtmQXlRzTjBWdfQwlhCbDbZrnWWxbcQtVqJzdwsLfJHljwZkKkpGHLhSGTg">nyshanbekraimberdi02@gmail.com</a>.</p>
+        </div>
+
+        <br>
+
+        <div style="padding: 0px 0px 10px 0px;" class="policy-confidens_span">
+            <span>&copy; Вкусные моменты</span>
+            <span>2024 г.</span>
+        </div>
+        
+    </footer>
+
+</div>
+
+
+<!--Script-->
+    <script src="menu-list.js" ></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

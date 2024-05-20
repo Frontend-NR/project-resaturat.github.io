@@ -1,0 +1,355 @@
+/*Для мобиьное устройство*/
+@media screen and (max-width: 500px){
+    
+    .container-box{
+        width: 100%;
+        display: flex;
+        padding: 0px;
+    }
+    
+    
+
+
+
+    /*Навбар*/
+    .nav-link:hover{
+        transform: translateX(10%);
+        transition: all ease-in 0.3s
+    }
+
+    .navbar-toggler:active{
+        height: 60px;
+        width: 60px;
+    }
+
+
+
+
+
+
+    /*Кейтеринг*/
+    .katerings{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .katering-set{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-direction: row;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .katering-txt{
+        font-size: 20px;
+    }
+
+    .katering-box{
+        gap: 0px;
+        padding: 0%;
+        padding: 0px;
+        color: rgb(255, 255, 255);
+    }
+
+    .katering-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0%;
+        max-width: 500px;
+    }
+
+    .katering_under-title-box{
+        background-color: #ffffff67;
+        margin-top: 0px;
+        opacity: 0.9;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .txt-logo{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .txt-logo-2{
+        display: flex;
+        width: 100%;
+    }
+
+    .katering_under-title{
+        box-sizing: border-box;
+        width: 100%;
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        text-rendering: optimizeSpeed;
+    }
+
+
+
+
+
+    /*Бронь*/
+    .reservation{
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 0px 20px 0px;
+        width: 95%;
+    }
+
+    .table-image{
+        width: 90%;
+    }
+
+    .container-reszerv {
+        padding: 0px 0px 0px 0px;
+    }
+
+
+    .reservation-details {
+        width: 90%;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 0px;
+    }
+
+
+    .reserv-head{
+        padding: 20px 0px 50px 0px;
+        font-size: 25px;
+    }
+
+
+
+
+
+    /*Акция*/
+    .sale-container{
+        font-size: 5px;
+    }
+
+
+    .sale-box{
+        width: 100%;
+    }
+
+    .sale-header-box{
+        font-size: 10px;
+    }
+
+    .sale-box2{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+      .sale-header-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 5px;
+    }
+
+    #sale-special-offer_box {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_h2{
+        font-size: 10px;
+    }
+
+    #sale-special-offer_box p{
+        font-size: 17px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    #sale-special-offer_box ul{
+      font-size: 15px;
+      padding: 10px 0px 10px 0px
+    }
+
+    #sale-special-offer_box span{
+        font-style: italic;
+    }   
+    .sale-header-box span{
+        font-size: 20px;
+    }   
+    .sale-special-offer_container h2{
+        font-size: 20px;
+    }   
+
+
+
+
+
+
+
+    /*Инфо о ресторане*/
+    .info-page_container{
+        width: 100%;
+        max-width: 100%;
+    }   
+    .info-page_box{
+        width: 95%;
+        max-width: 95%;
+    }   
+    .info-page_pr{
+        width: 95%;
+        max-width: 95%;
+    }
+
+      
+
+
+    
+
+    /*Категория меню*/
+    .kategory-container{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .header-for-kategory{
+        width: 90%;
+        padding: 20px 0px;
+        display: none;
+    }
+
+
+    .kategory-box{
+        width: 100%;
+        padding: 50px 2px;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+
+    /*Меню*/
+    .menu_container1{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0%;
+    }
+
+
+    .menu-container{
+        width: 100%;
+        padding: 0px;
+    }
+
+
+    .cart-container{
+        padding: 10px 20px;
+        max-width: 95%;
+        margin: 0px 0px 0px 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+/*Для планшетных устройств*/
+@media (min-width: 700px) and (max-width: 800px){
+
+    .nav-link:hover{
+        transform: translateX(10%);
+        transition: all ease-in 0.3s
+    }
+
+    .kategory-container{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .header-for-kategory{
+        width: 100%;
+        padding: 20px 0px;
+        display: none;
+        padding: 0px 20px;
+        justify-content: center;
+    }
+
+
+    .kategory-box{
+        width: 100%;
+        padding: 50px 2px;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+
+    .menu_container1{
+        flex-direction: row;
+        width: 100%;
+        padding: 0px 20px;
+        gap: 10px;
+    }
+
+
+    .menu-container{
+        width: 100%;
+        max-width: 100%;
+        padding: 0px;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .cart-container{
+        padding: 10px 20px;
+        max-width: 50%;
+        margin: 0px 0px 0px 0px;
+        align-items: center;
+        width: 100%;
+        gap: 0px;
+    }
+
+    .menu-box{
+        padding: 0px;
+        width: 100%;
+        max-width: 95%;
+    }
+}
+
+

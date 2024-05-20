@@ -1,0 +1,953 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0%; 
+  margin: 0%;
+  transition: all 0.1s ease;
+}
+
+/*body*/
+
+
+/*Навигация*/
+.collapse{
+    justify-content: right;
+}
+
+.navbar-nav{
+    gap: 55px;
+}
+
+
+.logo-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.logo{
+    height: 35px;
+    width: 45px;
+    align-items: center;
+    object-fit: contain;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-box span{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    align-items: center;
+    color: #fdfdfd;
+    margin-top: -4px;
+}
+
+.active-nav{
+    font-weight: 800;
+}
+
+.navbar-brand{
+  font-family: "Abril Fatface", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.nav-link:hover{
+  transform: translateX(-10%);
+  transition: all ease-in 0.3s
+}
+
+
+
+
+
+
+/*Заголовок главного страниц сайта*/
+
+.container-box{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  background: url('https://roomester.ru/wp-content/uploads/2019/06/dizajn-restorana2.jpg') fixed center;
+  flex-wrap: wrap;
+  
+}
+
+.header-box{
+  background-color: #ffffffc6;
+  display: flex;
+    color: #f57200;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 50px;
+    
+}
+
+.header-box span{
+    color: #393229;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-box .header-box h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} 
+
+
+.container-box{
+  height: 100vh;
+  font-family: sans-serif;
+  
+}
+
+
+
+
+
+
+
+/*Кейтеринг*/
+.katering-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.katering-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+    width: 100%;
+    background: linear-gradient(170deg, rgb(149, 184, 233), rgb(106, 16, 148));
+    background-size: cover;
+    gap: 0px;
+    padding: 10px 0px 10px 0px;
+
+}
+
+.katering-box .katering-header span{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.katerings{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    justify-content: center;
+    gap: 50px;
+}
+
+.katering-set{
+    display: flex;
+    height: 200px;
+    border: #080000 1px none;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.katering_under-title-box{
+    background-color: #ffffff67;
+    width: 90%;
+    padding: 20px 5px 20px 5px;
+    margin-top: 0px;
+    opacity: 0.9;
+    padding: 5px 30px 0px 30px;
+}
+
+.katering_under-title{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    opacity: 1;
+    color: #010501;
+    font-weight: 600;
+}
+
+.katering_under-title-box .katering-header .txt-logo{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.txt-logo{
+    font-weight: 500;
+}
+
+.txt-logo-2{
+    margin-left: 5px;
+    color: #ef900c;
+    font-weight: 500;
+}
+
+.katering-header_p{
+  font-weight: 700;
+  font-size: 25px;
+}
+
+
+
+
+
+/*Спец предложение на меню*/
+.special-container1{
+  padding: 10px 0px 50px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.special-container1{
+  background: linear-gradient(180deg, rgb(235, 231, 226), rgb(228, 218, 201));
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.special-container{
+  gap: 50px;
+}
+
+
+.special-offers-header{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 50px 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+.view-menu_spacial-box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.view-menu_spacial-box .view-menu_in-spacial{
+  width: 32%;
+  background-color: #e39f17;
+  color: #ffffff;
+}
+
+.view-menu_in-spacial{
+  background-color: #000700;
+}
+
+
+
+
+/*Cкидка*/
+.sale-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    background-color:rgba(239, 239, 239, 0.432);
+    padding: 20px 0px 50px 0px;
+    flex-wrap: wrap;
+}
+
+.sale-box{
+  width: 50%;
+}
+
+.sale-header-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sale-header{
+    font-size: 35px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.sale-header-sub{
+    font-size: 19px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+}
+
+
+
+
+.sale-special-offer_container {
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.sale-special-offer_container h2{
+    font-size: 35px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    
+}
+
+.sale-special-offer_container p, span{
+  font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+}
+
+
+#sale-special-offer_box {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-radius: 5px;
+  flex-direction: column;
+  display: flex;
+  width: 65%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#sale-special-offer_box p{
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 17px;
+  padding: 0px 0px 0px 0px;
+}
+
+#sale-special-offer_box ul{
+  font-family: "Unna", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  padding: 10px 0px 10px 0px
+
+}
+
+#sale-special-offer_box span{
+  font-style: italic;
+}
+
+
+
+#claim-offer {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  justify-content: center;
+  width: 30%;
+  text-align: center;
+}
+
+#claim-offer:hover {
+  background-color: #45a049;
+}
+
+#menu-spacial-sale {
+  margin-top: 50px;
+  width: 100%;
+}
+
+#menu-list_spacial-sale {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.menu-item_spacial-sale {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: space-between;
+  
+}
+
+.menu-item_spacial-sale .img-spacial-sale {
+  width: 150px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.menu-item_spacial-sale .price-spacial-sale {
+  background-color: orange;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  width: inherit;
+}
+
+.menu-item_spacial-sale:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item_spacial-sale:hover .img-spacial-sale {
+  transform: scale(1.1);
+}
+
+.menu-item_spacial-sale:hover .price-spacial-sale {
+  background-color: #45a049;
+}
+
+.sale-box2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+
+
+
+
+/*Просмотр меню*/
+.view-menu_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.view-menu{
+  display: flex;
+  max-width: 90%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  flex-direction: column;
+  gap: 0px;
+  padding: 70px 0px 30px 0px;
+}
+
+.view-menu img{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+}
+
+.animated-button {
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 30px;
+  border: none;
+  font-size: 24px;
+  background-color: rgb(226, 170, 17);
+  border-radius: 100px;
+  font-weight: 600;
+  color: #f3efef;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  text-decoration: none;
+  color: inherit;
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #f7f7f7;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  color: inherit;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:active {
+  scale: 0.90;
+  
+  transition: all 0.1s cubic-bezier(0.23, 1, 0.32, 1);
+  color: #f1eded;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+.view-menu_header{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+  color: #000000;
+  font-size: 25px;
+  text-align: center;
+  max-width: 95%;
+  padding: 30px 0px 20px 0px;
+  flex-direction: column;
+}
+
+
+.pages_txt1{
+  font-family: "Unna", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.pages_txt2{
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 17px;
+}
+
+
+
+
+
+
+/*popular foods*/
+  .card_box {
+    border-radius: 5px;
+    background: linear-gradient(170deg, rgba(254, 253, 253, 0.623) 0%, rgb(190, 186, 186) 100%);
+    position: relative;
+    
+    cursor: pointer;
+    transition: all .3s;
+    width: 250px;
+  }
+  
+  .card_box:hover {
+    transform: scale(1.0);
+  }
+  
+  .card_box span {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+  }
+  
+  .card_box span::before {
+    content: 'Популярные';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+   font-size: 10px; 
+    
+  }
+
+
+  .container-popular {
+    display: flex;
+    border-radius: 5px;
+
+  }
+  
+  .card_box span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+
+.popular-foods{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.popular-food_container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 100px 20px;
+}
+
+.popular-food-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+.popular-food_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.popular-foods-img{
+  width: inherit;
+  border-radius: 10px;
+}
+
+
+.popular-foods-bottom ~ p{
+  text-align: center;
+}
+
+.popular-name-menu{
+  padding: 50px 80px;
+}
+
+
+
+/*Reservation*/
+.container-reszerv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px 25px 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reservation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 50px 20px;
+}
+
+.table-image {
+  width: 45%;
+  border-radius: 10px;
+  padding: 0px 0px;
+  height: inherit;
+}
+
+.reservation-details {
+  width: 50%;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.reserv-head {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 0px 0px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label-for-reserv {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-for-reserv {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+/*Политика конфиденциалность*/
+.policy-confidense_container{
+  background: rgb(116, 116, 116);
+  color: rgb(255, 255, 255);
+  padding: 20px 10px 20px 10px;
+}
+
+.policy-confidens_header{
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 0px 25px 0px;
+}
+
+.policy-confidens_box{
+  text-align: start;
+  font-style: italic;
+
+}
+
+
+.policy-confidens_p{
+  opacity: 0.8;
+  text-align: center;
+}
+
+.policy-confidens_span{
+  display: flex;
+  font-size: 25px;
+  font-weight: 600;
+  gap: 25px;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.policy-confidens_link{
+  text-decoration: none;
+  color: #e9b303;
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+
+
+
+/*Отзыв рейтинг*/
+.rating_container{
+  background: #5d615d;
+}
+
+.rating {
+  display: flex;
+  direction: rtl;
+  padding: 15px 15px;
+  width: 100%;
+  color: rgb(223, 185, 17);
+  justify-content: center;
+  font-style: italic;
+}
+.rating_container span{
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  color: #ccc;
+  font-style: italic;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  color: #ddd;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.rating label:before {
+  content: '★';
+  margin-right: 5px;
+}
+
+.rating input:checked ~ label {
+  color: #ffbf00;
+}
+
+
+
+
+
+
+/*Info*/
+.info-page_container{
+  width: 100%;
+  background: #5d615d;
+}
+
+.info-page_box{
+  padding: 15px 50px;
+  color: white;
+  max-width: 60%;
+  opacity: 0.9;
+}
+
+.info-page_header{
+  font-size: 25px;
+  padding: 10px 0px;
+}
+
+.info-page_pr{
+  padding: 0px 25px;
+}
+
+/*Info*/
+.info-page_box a{
+  text-decoration: none;
+  color: #d8c40d;
+}
+
+
+.info-page_icons{
+  color: #45a049;
+}
+
+.info-page_whatsapp{
+  color: #45a049;
+  font-weight: 500;
+}
+
+
+.info-page_telegram{
+  color: #181bb3;
+  font-weight: 500;
+}
+
+.info-page_instagram{
+  color:#6f28c0;
+  font-weight: 500;
+}
+
+.page-contact{
+  font-style: italic;
+}

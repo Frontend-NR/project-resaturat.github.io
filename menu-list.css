@@ -1,0 +1,245 @@
+/*Категория меню*/
+.kategory-container{
+    margin: 0%;
+    padding-top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 30px 25px 50px 25px;
+}
+
+.kategory-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 20px;
+}
+
+.kategory-box2{
+    display: flex; 
+    
+}
+
+
+.kategory-list-box{
+    width: auto;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.kategories{
+    display: block;
+    background: #bd4e1a;
+    border-radius: 10px 5px;
+    padding: 5px 10px;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.kategories:hover{
+    transform: scale(1 0.9);
+  transition: 0.1s all ease-in-out;
+  background-color: #d9a14e;
+}
+
+
+.kategories:active{
+  transform: scale(0.9, 0.9);
+  transition: 0.1s all ease-in-out;
+}
+
+.kategory-container .kategory-box .kategory-list-box a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/*header-for-kategory*/
+.header-for-kategory{
+    font-size: 20px;
+}
+
+.header-for-kategory span{
+    padding: 10px 20px 10px 10px;
+    background: #e28f13;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+/*Mеню*/
+.menu_container1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 90px;
+    padding: 0px 5px 50px 0px;
+}
+
+.cart-container{
+    max-width: 35%;
+}
+
+.menu-container{
+    background: rgb(255, 255, 255);
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.waters-header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 50px 0px;
+    background-color: #dc3545;
+    color: antiquewhite;
+}
+
+.menu-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    font-size: 17.5px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.menu-cards{
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    background: white;
+   
+    box-shadow: 1px 1px 50px 1px rgb(208, 171, 77) inset,
+    5px 5px 0px 1px rgb(228, 148, 9);
+    gap: 12px;
+    
+}
+
+.menu-img-box{
+    height: inherit;
+    width: inherit;
+    
+}
+
+.menu-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.menu-all-text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 10px 5px 10px;
+    border-right: 1px rgb(228, 228, 228) inset;
+    border-bottom: 1px rgb(228, 228, 228) inset;
+    width: 250px;
+    height: 200px;
+    
+}
+
+.menu-text-box{
+    font-size: 15px;
+}
+.menu-name-box{
+    display: flex;
+    font-weight: 600;
+}
+
+.menu-name{
+    display: flex;
+    font-weight: 700;
+}
+
+.menu-price-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 700;
+    width: 100%;
+}
+
+.price_for-all-menu{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.menu-price{
+    font-size: 25px;
+}
+
+
+
+
+
+
+.menu-container{
+    display: none;
+}
+
+#object1{
+    display: none;
+}
+
+
+
+
+.cart-container{
+    box-shadow: 1px 1px 50px 1px rgb(211, 210, 208) inset,
+    10px 10px 0px 1px rgb(227, 195, 139);
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 30px 30px 10px 30px;
+    max-height: 300px;
+    scroll-behavior: smooth;
+    max-height: 300px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    
+}
+
+#cart-items{
+    list-style-type: number;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#total-price{
+    font-weight: 900;
+    text-align: center;
+}
+
+.btn-danger{
+   position:relative;
+
+}
+
+.cart-container h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

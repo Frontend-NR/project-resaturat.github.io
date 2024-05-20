@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAAC2FJREFUeF7tnXuQFcUVxn+zvJSXgohBSUAgiCAYAwKJIgiGR0zWApMI5KFGUxUSo6lYsAiWQQILC0JpYtAikGASI5r4AIMIEQQ0ElBAXhKJPEWFFREWXd47qbOzl+Kxu9Mzd+5M31unq/iHPX3O6e98t2emu89pB5/mTqI1J+gEXIlDd1y+hkNDv3769wQQcCnBYTku/wHWUoN1zgi2VOeJU9UfywPvMh6XWxIYipqMCgGHp3EYXRURKiWAW8RoXB4Aakflh+pJFIGjOIx1Chh/phdnEcAtYj0uVyTqrhrPDAIOG5wCOp6q/DQCuBNZBPTOjHXVagkCi52R9En5cpIAbiH55DHHEifVjUwiUMZNzijmiolyAriTacoJtgPnZtKu6rYGgUPUoKUznGKPAEX8AZc7rXFPHck8Ag4znAJ+4riFtCWPdzNvUS1Yh0AZlznuJIZQxt+sc04dyjwCeQx13CIewuXezFtTC9Yh4DDFcSfyKtDLOufUoTgQWCIEKAEaxGFNbViHwEEhgGudW+pQbAgoAWKD2k5DSgA74xKbV0qA2KC205ASwM64xOaVEiA2qO00pASwMy6xeaUEiA1qOw0pAeyMS2xeKQFig9pOQ0oAO+MSm1dKgNigttOQEsDOuMTmlRIgNqjtNKQEsDMusXmVLAFa9IYb/wwNLoltwNUbcuHYIXBPgFsGn++B46WwfxuU7IRdr8G2hXD0oCX+pu+GEiAohkKO0r1QvBb+9wJs/GtWEyJZAlQGvswKzbpBu+/AhZ0gr2bQEMUrf6wUit+GNY/Dxr/EazsCa/YR4NRBdfgBXPsgnN8qvaGeOAInjsKRA3B439m6atWHuhdCjdpQo05IWy7s3wprHoOVU0LqiL+b3QQQPFoNgP7ToUFzQ3QqArF7FexYBLteh73vGPYFmrSHln2hxfVwcXePGF4ClWFzYc8aWDoKti0w7JOcmP0EEGx6ToSuv4K8Wv5IyQvawp9HNx0LATv/Ar7YE2rV9befkpDZZvWjsOx+8z4JSGYHAdp8GwbMgLpN/SGKmgApizIb9PgNfKmX+XtJ2XHYNBsW/szaF8XsIIAE4Y6N3vTs1zJFgJTdq4bBtWPMyCh95Kth45Mw71Y/zxP5e/YQYPAr0OJkWnvVYGWaAKn3khsegUZfNguakGD9EzD/DjP5GKWyhwA3z4E2+f7QxEGAFAn6PQYNW/j7JBJH9sPS+7zPRYta9hBA3gE6GfyC4iKABLHtQOj3uPnjYO9GmPO9YF8lGSaLEiBdgHsWwtX3emsIfk0eBTID/OsuP8nY/q4ESBfq2g1gyGL4QhczTSU7YM5g+FBK+SXflABRxKD7fXDNA1DzHH9tZcdg5VRYOtJfNgYJJUAUIDduCzfPhcaXmWmTXcUnrzOTzbCUEiAqgPNnw+WGRVUP7oK5Q73t5YSbEiCqAFw3DroON3sZPPoZLLoH1v0xKuuh9SgBQkN3RscOP4S+vwd5KfRrsjO5oghek2q8yTYlQFT4ByGAnDaSbWMLPgeVAEkQQGyumwnzky/NqARQAmRJjSAbl4JPJc9X74JeE6FWPX9KyTvAyslWnBXQGcA/XGYS1z8EXe4xOytw/BC8PgZWTDLTnUEpJUBU4JpuV4u90mLv+f/ei1FZD61HCRAaulM6ymmhm2abbw3vWQ2zOkdhOW0dSoC0IQx4ZlE+Ad+eDguHRWE5bR1KgHQhlGNqg14wPx0k2UYv3Q5b56drOZL+SoB0YRwwEzreCk4NA00u/PfvMMdwz8BAY7oiSoB0ELzqp9BzAtQ530xLyfvw0m2wY7GZfAxSSoCwIHf6sRd8k6PqYuP4YW/9Xz7/LGpKgDDB6DYCuo+EcxqZ9bb4aLgSwCyEnlSY5BAJviSHLBhmZXKIEsCPALK9K0mqHW+Hplea7fendMqK39oZ8MrdflYS+3vuEUC2Ng5sh0+3gJy8+Xidl88vZ/EkUVT+r7LW7Gpo3A5q1/MOeMp5f8lKluIVgTOGKxJUl0/wdv0sbjlIgITRPvypVzRi2Wgrp/wz0VECRMIX1yshs+kZWPXbqmeZSGxFq0QJEAWe8qv/6E3Y8k/Y/LwSIApMz9Jheh7grI5S+KnUK/pUVZMyNDUjujVXUsL3vevVJ1g9zfrHQO7NAHLiVvbZNz8bPAdP1vWbdQV5IZT6RJL9W7eJ4TJvJeySmUEKScnhz6pePjPyazFXmoMEiLhCiJBCPgElM7lR63BkOPQJvPUwvDHOPDIxSSoBggAt2cBdfgmXfN3s5M9pul14f5lXLSRIzaIg/oWQVQKEAK08LbzHOGhyefACUsXr4MWh1pBACRCGANJHVgj7POytEpqkhp9qRxan5g6xggRKgLAESPXrVQSd7zbLDD5py4Xti+D5QYl/JSgB0iWA9A9DAtkefnOqt2KYYFMCRAG+PA4GPgctpYhVgKKSB7Z5WcIJFotQAkRBANEhBSVlsar+xeYaLTggqgQwD5e/5I2zQJJEnTx/2ZSErBo+mw/7Npv3iVBSCRAhmOWzwDf/BPUuMtd6pMSrFbB+lnmfCCWVABGCWa7q+8ugeQ9zrQmniisBzENlJhkkRzClUW4heaafmf6IpZQAEQOKnBbu8wjUrm+uOcFUMSWAeZjMJMPcgyR7AzM7mOmPWEoJEDGgKAGiRrRCn+mBkDhrBVc2VCWAEiDwVXg7X4WnemcIuOrV6iMgatjbD4W+06DOeeaaNzwB824zl49QUgkQIZjlqnqMhW4F5lvEcqPZ8kL499ioPTHSpwQwgimAkOnFFimVBz+AeT9KLGNYCRAgtr6iQUvFiMIt8+Af3/JVnSkBJUCUyH7jUZCaAUbFIgA5wbykANZMi9KLQLqUAIHgqkY4zHawBWXjlQBREEAOhHx3PjS/xlybXGErF1xK6niCLXsIYPpyFfdCkAQ//ylo1d986rfoGrnsIYBpIcY4CRAm+JK+bsmBUJl4socAttwcmpqu5QrZ3lPhoq8EOwdo0ZHw7CGADXcHpwIvt5jLYk/bQcFW+6T/J5u8zKCdSxJ86p9uOjtmgN5TvBu8jW4P/wyWjYJVv4sWZPnFS0XwljcED7xM+x+u8K6OtSgtLDtmAPm86j8d5JcXpMkSa+nHXrkYOXi5+y2QOn2y8OLX5Nl+aV/vaJdkCl/QrqIiWIAj3ykbUidI7gaSa2Pl/cSyZvcMIFfFyk3dQYPvC3JVNQMcqHWu+dt8dXakTsAHb3jr/NsW+HqUlIB9BJD99Ev7eZ9VF7QPkYWbFJQVdmV1TxZ4pEaBRc/6qlBJlgBhDk8kHN+zzMsv/fPdIOf6tr7sFYiycKpXAoQhjrxHyPUu0qTMTOkekHP8ktK1dxN8tCKxXbwww6msT7IzQFSjUD2hEVAChIYuNzoqAXIjjqFHoQQIDV1udFQC5EYcQ49CCRAautzoqATIjTiGHoUSIDR0udFRCZAbcQw9CiVAaOhyo6MSIDfiGHoUSoDQ0OVGRyVAbsQx9CiUAKGhy42OjjuBAzg0zI3h6CgCIeBSIjPAy0AyJaoCeavCGUBggcwAY3D4dQaUq0rbEXB5UAgwEIfnbPdV/csAAi6DHHcSrSnjvQyoV5W2I5BHm/KD7m4Rs3G5xXZ/1b8IEXB42ilgsEcAbxZ4Ry5CidCEqrIXgaPk0d4ZwZaTqS5uEaNxse9eM3tBzF7PHO53ChgvAzgt18ktYj0uV2TvyNRzXwQcNjgFdEzJnZXs5k5kEZBM1UJf71UgTQQWOyORe21OtkqzHd1C8slDapdEdKFumm5r93QROEQZg51RzD1TUZXpru5kmlLGeFzuTNe69k8QAYcZ5DHaGU5xZV745ju7hbSlJp1xK/5BZ6BBgkNS01UjIPnnq3Aq/h1nlTOKai8j+j8+/wnPLUzLjgAAAABJRU5ErkJggg==">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,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">
+
+    <link rel="stylesheet" href="menu-list.css">
+
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+
+  
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-weight: 700;">ВКУСНЫЕ МОМЕНТЫ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item active-nav">
+                        <a class="nav-link" href="index.html">Категория</a>
+                    </li>
+                    <li class="nav-item active-nav">
+                        <a class="nav-link" href="menu-list.html">Меню</a>
+                    </li>
+                    <li class="nav-item" onclick="goToSale()">
+                        <a class="nav-link" href="#" active-nav>Акция</a>
+                    </li>
+                    <li class="nav-item" onclick="goToContactFromPage2()">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                    <li class="nav-item" onclick="goToContactFromPagee2()">
+                        <a class="nav-link disabled" aria-disabled="true">Инфо</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+
+
+    <!--Категория-->
+    <div class="kategory-container">
+
+      <div class="header-for-kategory">
+        <span style="background-color: #799cdd;">Посмотреть по категорию меню</span>
+      </div>
+
+        <div class="kategory-box kategory-box2">
+            <div class="kategory-list-box" onclick="showObject('object1')" >
+                <a href="#" class="href"><span class="kategories">Горячие блюды</span></a>
+            </div>
+            <div class="kategory-list-box" onclick="showObject('object2')">
+                <a href="#"><span class="kategories" >Салаты</span></a>
+            </div>
+            <div class="kategory-list-box" onclick="showObject('object3')">
+                <a href="#"><span class="kategories">Десерты</span></a>
+            </div>
+            <div class="kategory-list-box" onclick="showObject('object4')">
+                <a href="#"><span class="kategories">Горячий чай</span></a>
+            </div>
+            <div class="kategory-list-box" onclick="showObject('object5')">
+                <a href="#"><span class="kategories">Пиццы</span></a>
+            </div>
+            
+            <div class="kategory-list-box" onclick="showObject('object6')">
+                <a href="#"><span class="kategories">Напитки</span></a>
+            </div>
+            <div class="kategory-list-box" onclick="showObject('object7')">
+              <a href="#"><span class="kategories">Закуски</span></a>
+            </div>
+            <div class="kategory-list-box" onclick="showObject('object8')">
+              <a href="#"><span class="kategories">Европеская кухня</span></a>
+            </div>
+            <div class="kategory-list-box" onclick="showObject('object9')">
+              <a href="#"><span class="kategories">Кыргызская кухня</span></a>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    <!--Menu-->
+  <div class="menu_container1">
+
+    <div class="menu-container jarovniya" id="object1">
+      <div class="menu-box" id="menu-container">
+        
+        <div class="menu-cards" data-name="Жаровня" data-price="400">
+              <div class="menu-img-box">
+                  <img class="menu-img" src="https://img2.creatium.app/d1/6a/1e/7c81cfdd4247ff5ec98ece93c0e555c942/xflvgsjw7jglxx2jqxo4pjorf1h0lpnk.jpg" alt="">
+              </div>
+              <div class="menu-all-text-box">
+                  <div class="menu-name-box">
+                      <span class="menu-name">Жаровня</span>
+                  </div>
+                  <div class="menu-text-box">
+                      <p class="menu-text">Говядина с жаренными овощами</p>
+                  </div>
+                  <div class="menu-price-box">
+                      <span class="price_for-all-menu">580 cом</span>
+                      <button class="btn btn-primary order-btn" onclick="addToCart('Жаровня', 580)">Заказать</button>
+                  </div>
+              </div>
+        </div>
+      
+        <div class="menu-cards" data-name="ТЕЛЯТИНА" data-price="400">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://myastoriya.com.ua/upload/medialibrary/360/360df31c191f4d37df9f432ff4a5278e.png" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Телятина</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Телятина под соусом азия</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">400 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Телятина', 400)">Заказать</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-cards" data-name="Курица" data-price="400">
+          <div class="menu-img-box">
+              <img class="menu-img" src="https://awstest.zor.store/images/detailed/46/Sweet_and_sour_fish_fillet.PNG" alt="">
+          </div>
+          <div class="menu-all-text-box">
+            <div class="menu-name-box">
+                <span class="menu-name">Курица</span>
+            </div>
+            <div class="menu-text-box">
+                <p class="menu-text">Курица в кисло сладком соусе</p>
+            </div>
+            <div class="menu-price-box">
+                <span class="price_for-all-menu">300 cом</span>
+                <button class="btn btn-primary order-btn" onclick="addToCart('Курица', 400)">Заказать</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-cards" data-name="Курица" data-price="400">
+          <div class="menu-img-box">
+              <img class="menu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuJsb6ACtYmPEi0pfSe5IKmlbSnE_0LrRwcw&usqp=CAU" alt="">
+          </div>
+          <div class="menu-all-text-box">
+            <div class="menu-name-box">
+                <span class="menu-name">Суп говядиной</span>
+            </div>
+            <div class="menu-text-box">
+                <p class="menu-text">Говяжий суп с самыми различными овощами и крупами.</p>
+            </div>
+            <div class="menu-price-box">
+                <span class="price_for-all-menu">200 cом</span>
+                <button class="btn btn-primary order-btn" onclick="addToCart('Суп говядиной', 200)">Заказать</button>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+    </div>
+
+
+      <div class="menu-container salads" id="object2">
+        <div class="menu-box">
+
+          <div class="menu-cards" data-name="Винегред" data-price="400">
+            <div class="menu-img-box">
+                <img class="menu-img" src="images/salad-vinegred.jpg" alt="vinegred">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Винегред</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Свекла, картошка, зелень </p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">210 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Винегред', 210)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Китайский салат" data-price="400">
+            <div class="menu-img-box">
+                <img class="menu-img" src="images/salad-kitayskiy.jpg" alt="kitayskiy">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Китайский салат с говядиной</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Сладкого и красного переца, жаренная говядина, огурцы, кунжут, кинза, с соевой соусом</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">150 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Китайский салат', 150)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Греческий салат" data-price="400">
+            <div class="menu-img-box">
+                <img class="menu-img" src="images/salad-grecheskiy.jpg" alt="grecheskiy">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Греческий</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Свежие помидоры, свежие огурцы, болгарский перец, листья салата, маслины, сыр фетакса, лук шалот, оливковое масло.</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">300 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Греческий', 300)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Витаминка" data-price="400">
+            <div class="menu-img-box">
+                <img class="menu-img" src="images/salad-vitaminka.jpg" alt="vitaminka">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Салат Витаминка</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">капуста, морковь, свекла, яблоки, грецкие орехи, лист салата, оливковое масло.</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">190 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Салат Витаминка', 190)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Шакарап" data-price="400">
+            <div class="menu-img-box">
+                <img class="menu-img" src="images/salad-shakarap.jpg" alt="shakarap">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Шакарап</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Огурцы, помидор, репчатый лук и свежая кинза.</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">140 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Шакарап', 140)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Салат из моркови" data-price="250">
+            <div class="menu-img-box">
+                <img class="menu-img" src="images/salad-morkov.jpg" alt="morkov">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Салат из моркови</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Свежий салат с марковии</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">250 cом / кг</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Салат из моркови / кг', 140)">Заказать</button>
+                </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+
+
+      <div class="menu-container" id="object3">
+        <div class="menu-box">
+  
+          <div class="menu-cards" data-name="Терамису" data-price="190">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://images.thevoicemag.ru/upload/custom/0c4/0c414b212d2683b421f8e34a641048d5.jpg" alt="">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Терамису</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Итальянский многослойный десерт, в состав которого входят сыр маскарпоне, кофе (обычно эспрессо), куриные яйца, сахар и печенье савоярди.</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">190 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Терамису', 190)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Винегред" data-price="400">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://masterpiecer-images.s3.yandex.net/7730186bb07211ee8d61ba0d8cad0506:upscaled" alt="">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Макаронс</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Французский Макаронс сделанной из миндальной муки, сахарной пудки </p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">210 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Макаронс', 210)">Заказать</button>
+              </div>
+            </div>
+          </div>
+  
+            
+  
+            
+          </div>
+      </div>
+
+
+      <div class="menu-container tea" id="object4">
+        <div class="menu-box">
+            
+          <div class="menu-cards" data-name="Черный чай" data-price="40">
+            <div class="menu-img-box">
+                <img class="menu-img" src="images/chernyi-chay.jpg" alt="chernyi">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Чай черный</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Классический черный чай</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">40 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Черный чай', 40)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Зеленый чай" data-price="40">
+            <div class="menu-img-box">
+                <img class="menu-img" src="images/zelennyi-chay.jpg" alt="zelennyi">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Чай зеленый</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Классический зеленый чай</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">40 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Зеленый чай', 40)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Чай имбирный" data-price="90">
+            <div class="menu-img-box">
+                <img class="menu-img" src="images/chay-imbir.jpg" alt="imbir">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Чай имбирный</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Чай с имбиро-медеовый</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">90 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Зеленый чай', 90)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Фруктовый чай" data-price="80">
+            <div class="menu-img-box">
+                <img class="menu-img" src="images/chay-fruit.jpg" alt="fruit">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Чай фруктовый</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Фруктовый чай</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">80 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Чай фруктовый',80)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Облепиховый чай" data-price="85">
+            <div class="menu-img-box">
+                <img class="menu-img" src="images/chay-oblepihovyi.jpg" alt="oblepihovyi">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Чай Облепиховый</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Ароматный и согревающий горячий чай из облепихи, по вкусу медем или сахаром</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">85 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Чай Облепиховый', 85)">Заказать</button>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+
+
+      <div class="menu-container pizzas" id="object5">
+        <div class="menu-box">
+
+          <div class="menu-cards" data-name="Пицца цезарь" data-price="400">
+            <div class="menu-img-box">
+                <img class="menu-img" src="#" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Пицца Цезарь</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Куринная гудка с помидороми, сырами моцорелла и под соусом цезарь</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">650 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Пицца Цезарь', 650)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Пепперони" data-price="400">
+            <div class="menu-img-box">
+                <img class="menu-img" src="#" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Пицца Пепперони</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Колбаса, сыры моцарелла, перчик чили</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">600 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Пицца Пепперони', 600)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Маргарита" data-price="400">
+            <div class="menu-img-box">
+                <img class="menu-img" src="#" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Пицца Маргарита</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">помидоры с сырами, моцарелла м сулугуни</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">600 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Пицца Маргарита', 600)">Заказать</button>
+                </div>
+            </div>
+          </div>
+          
+          <div class="menu-cards" data-name="Классика" data-price="400">
+            <div class="menu-img-box">
+                <img class="menu-img" src="#" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Пицца Классика</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">помидор, колбаса, огурец маринованный</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">590 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Пицца Классика', 590)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+            
+      <div class="menu-container waters" id="object6">
+
+        <span class="waters-header">Прохладные напитки и коктейли</span>
+        <div class="menu-box">
+  
+          <div class="menu-cards waterss" data-name="Coca cola" data-price="95">
+            <div class="menu-img-box">
+                <img class="menu-img waters-img" src="#" alt="">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Coca cola</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Газированная напитка</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">95 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Coca cola', 95)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Fanta" data-price="95">
+            <div class="menu-img-box">
+                <img class="menu-img" src="#" alt="">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Fanta</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Газированная напитка</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">95 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Fanta', 95)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Pico" data-price="85">
+            <div class="menu-img-box">
+                <img class="menu-img" src="#" alt="">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Pico</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Сок со апелсином</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">85 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Pico', 85)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Экзотика'" data-price="205">
+            <div class="menu-img-box">
+                <img class="menu-img" src="#" alt="">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Экзотика</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Коктейл с экзотическими фруктами</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">205 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Экзотика', 205)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Пина Колада" data-price="205">
+            <div class="menu-img-box">
+                <img class="menu-img" src="#" alt="">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Пина Колада</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Кокосовый сироп, сливки</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">180 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Пина Колада', 180)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Borjomi'" data-price="110">
+            <div class="menu-img-box">
+                <img class="menu-img" src="#" alt="">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Borjomi</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Обычная газированная вода без красителей</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">210 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Borjomi', 110)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="menu-container zakuski" id="object7">
+        <div class="menu-box">
+
+          <div class="menu-cards" data-name="Ассорти маринадов" data-price="370">
+            <div class="menu-img-box">
+                <img class="menu-img" src="#" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Ассорти маринадов</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Помидоры, корнишоны, шампиньоны, квашеная капуста</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">370 cом / 400гр</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Ассорти маринадов / 400гр', 370)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Сырные палочки" data-price="320">
+            <div class="menu-img-box">
+                <img class="menu-img" src="#" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Сырные палочки</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text"></p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">320 cом / 400гр</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Сырные палочки / 400гр', 320)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Форель запеченная" data-price="1700">
+            <div class="menu-img-box">
+                <img class="menu-img" src="#" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Форель запеченная</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text"></p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">1700 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Форель запеченная', 1700)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Курица запеченная" data-price="850">
+            <div class="menu-img-box">
+                <img class="menu-img" src="#" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Курица запеченная</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text"></p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">850 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Курица запеченная', 850)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+          
+
+      <div class="menu-container zakuski" id="object8">
+        <div class="menu-box">
+
+          <div class="menu-cards" data-name="Спагетти с куриными фрикадельками" data-price="480">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://img.iamcook.ru/old/upl/recipes/cat/u-1f670a8f5813d2810eab2201adb1744a.jpg" alt="">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Спагетти с куриными фрикадельками</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Макаронные изделия. Со сливочным маслом, обжарить с яйцом</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">480 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Спагетти с куриными фрикадельками', 480)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="menu-cards" data-name="Картофельная запеканка с сыром" data-price="550">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://img.iamcook.ru/old/upl/recipes/cat/u-d3a713f5bf7bf4f95912c161a6e038bb.JPG" alt="">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Картофельная запеканка с сыром</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">картофель, сыр, яйца, майонез и специи.</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">550 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Картофельная запеканка с сыром', 550)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Картофельная запеканка с сыром" data-price="630">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://img.iamcook.ru/old/upl/recipes/cat/u1169-ce86ad78184dcd68b798eb341b5fa59a.JPG" alt="">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Курица запечённая с картошкой</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Вкусное полноценное блюдо, состоящее из кусочков курицы и картофеля, запеченных в духовке с чесноком и перцами.</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">630 cом</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Курица запечённая с картошкой', 630)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+ 
+      <div class="menu-container kyrgyz-foods" id="object9">
+        <div class="menu-box">
+
+          <div class="menu-cards" data-name="Манты" data-price="260">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://s1.eda.ru/StaticContent/Photos/120424122748/211227223840/p_O.jpg" alt="">
+            </div>
+            <div class="menu-all-text-box">
+              <div class="menu-name-box">
+                  <span class="menu-name">Манты</span>
+              </div>
+              <div class="menu-text-box">
+                  <p class="menu-text">Приготовленные на пару, из тонкого домашнего теста и рубленного мяса.</p>
+              </div>
+              <div class="menu-price-box">
+                  <span class="price_for-all-menu">260 cом / 1 порция</span>
+                  <button class="btn btn-primary order-btn" onclick="addToCart('Манты', 260)">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Жареный лагман" data-price="300">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://cdn-kz3.foodpicasso.com/assets/2023/03/16/4f6fc0b6b649f749f9ec5d4a171cdca5---jpg_1000x_103c0_convert.jpg" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Жареный лагман</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Жаренная домашняя лапша с сочной бараниной и овощами.</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">300 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Жареный лагман', 300)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Плов" data-price="2000">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_VxV4naL9w6XMXnfgk5Fsv_0KtZEqdfJ1WQ&s" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Плов</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Рис на пару и с марковьи</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">2000 cом / 1кг</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Плов / 1кг', 2000)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Куурдак" data-price="2000">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://apofiz-media.s3.amazonaws.com/media/bae68faaf903fc22/5758b80e-2df3-4566-8ee7-0dda36aa9003-4e02fcaa.jpg" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Куурдак</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Жаренное мясо с картошкой</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">2000 cом / 1кг</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Куурдак / 1кг', 2000)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Дымдама" data-price="1600">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://s1.eda.ru/StaticContent/Photos/150108085750/150116122959/p_O.jpg" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Дымдама</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">На пару мясо с картошкой</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">1600 cом / 1кг</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Дымдама / 1кг', 1600)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Дымдама" data-price="420">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://otyrar.kz/wp-content/uploads/2016/08/c6733657-03be-4685-8d45-70418323c62b.jpg" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Беш-бармак</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Домащняя лапша с мелко нарезанным кониным мясом</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">420 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Беш-бармак', 420)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Оромо (мясной рулет на пару)" data-price="180">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://avatars.dzeninfra.ru/get-zen_doc/4569450/pub_6023ba85ff10a04637fb99e0_6023bc89ff10a0463700672d/scale_1200" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Оромо (мясной рулет на пару)</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Киргизский рецепт приготовления мясного рулета на пару.</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">180 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Оромо', 180)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Самса" data-price="180">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://i.ytimg.com/vi/zFsfmxt4Eys/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCj2k_UguN-i8yFyCyA9emztfU73Q" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Самса</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Фарш из нарубленного кусочками сырого мяса, рубленого репчатого лука, внутри тесто и выпекание в специальной печи (тандыре).</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">90 cом / шт</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Самса / шт', 90)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Шопро (Суп кыргызский)" data-price="130">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://staticcontent.mypizza.kg/Dishes/Imperiia_Pitstsyi/v10/Supyi/Shorpo_iz_goviadinyi/Medium.png?hash=97832dfbba06e92bed61caade6dcb232" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Шопро (Суп кыргызский)</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Варенное мясо с картофель и морковьи</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">130 cом</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Шопро (Суп кыргызский)', 130)">Заказать</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="menu-cards" data-name="Боорсок" data-price="130">
+            <div class="menu-img-box">
+                <img class="menu-img" src="https://i.pinimg.com/originals/3b/68/bf/3b68bff1b86dc85ef7d584ff4d9e8dce.jpg" alt="">
+            </div>
+            <div class="menu-all-text-box">
+                <div class="menu-name-box">
+                    <span class="menu-name">Боорсок</span>
+                </div>
+                <div class="menu-text-box">
+                    <p class="menu-text">Боорсок - это традиционное мучное изделие народов Средней Азии. Нарезанные кусочки раскатанного теста обжариваются в масле</p>
+                </div>
+                <div class="menu-price-box">
+                    <span class="price_for-all-menu">220 cом / 1кг</span>
+                    <button class="btn btn-primary order-btn" onclick="addToCart('Боорсок / 1кг', 130)">Заказать</button>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+               
+
+
+
+
+      
+    <!-- Доска для отображение меню и счетчик-->
+    <div class="cart-container" id="cart-container">
+            <h2 >Заказанные меню</h2>
+            <ul id="cart-items" ></ul>
+            <p id="total-price">Общая сумма: 0 cом</p>
+            <button class="btn btn-danger" onclick="clearCart()">Отменить все заказы</button>   
+    </div>
+
+  </div>        
+
+
+
+
+
+    <!--Script-->
+    <script src="script.js" ></script>
+    <script src="menu-list.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
