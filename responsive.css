@@ -114,8 +114,7 @@
         flex-direction: column;
         justify-content: center;
         padding: 50px 0px 20px 0px;
-        width: 95%;
-      flex-wrap: wrap;
+        width: 85%;
     }
 
     .table-image{
