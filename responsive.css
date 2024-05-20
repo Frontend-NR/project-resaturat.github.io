@@ -1,5 +1,5 @@
 /*Для мобиьное устройство*/
-@media screen (min-width: 385px) and (max-width: 500px){
+@media screen and (max-width: 500px){
     
     .container-box{
         width: 100%;
@@ -115,11 +115,10 @@
         justify-content: center;
         padding: 50px 0px 20px 0px;
         width: 95%;
-      flex-wrap:wrap;
     }
 
     .table-image{
-        
+        width: 90%;
     }
 
     .container-reszerv {
