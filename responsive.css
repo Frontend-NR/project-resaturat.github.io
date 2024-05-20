@@ -1,5 +1,5 @@
 /*Для мобиьное устройство*/
-@media screen and (max-width: 500px){
+@media screen (min-width: 385px) and (max-width: 500px){
     
     .container-box{
         width: 100%;
