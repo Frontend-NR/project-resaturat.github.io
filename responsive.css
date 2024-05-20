@@ -1,5 +1,5 @@
 /*Для мобиьное устройство*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 550px){
     
     .container-box{
         width: 100%;
@@ -284,7 +284,7 @@
 
 
 /*Для планшетных устройств*/
-@media (min-width: 400px) and (max-width: 800px){
+@media (min-width: 600px) and (max-width: 800px){
 
     .nav-link:hover{
         transform: translateX(10%);
