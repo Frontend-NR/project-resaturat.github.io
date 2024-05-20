@@ -114,11 +114,11 @@
         flex-direction: column;
         justify-content: center;
         padding: 50px 0px 20px 0px;
-        width: 100%;
+        width: 95%;
     }
 
     .table-image{
-        width: 90%;
+        width: 100%;
     }
 
     .container-reszerv {
