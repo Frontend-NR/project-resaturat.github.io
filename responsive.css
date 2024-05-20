@@ -115,10 +115,11 @@
         justify-content: center;
         padding: 50px 0px 20px 0px;
         width: 95%;
+      flex-wrap:wrap;
     }
 
     .table-image{
-        width: 100%;
+        
     }
 
     .container-reszerv {
