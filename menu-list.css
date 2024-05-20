@@ -135,7 +135,7 @@
     box-shadow: 1px 1px 50px 1px rgb(208, 171, 77) inset,
     5px 5px 0px 1px rgb(228, 148, 9);
     gap: 12px;
-    max-width: 100%
+    min-width: 0%;
 }
 
 .menu-img-box{
