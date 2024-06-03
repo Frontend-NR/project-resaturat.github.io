@@ -1035,3 +1035,132 @@ iframe{
 .map_txt-box2 span{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
+
+
+
+
+
+
+
+.services-container{
+   padding: 20px 20px;
+}
+
+.services-box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header-service_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-service_box p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    flex-direction: column;
+    text-align: center;
+    max-width: 80;
+}
+
+.service-center_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.service-center{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-center svg{
+    width: 150px;
+    height: 150px;
+    padding: 40px 40px;
+    border-radius: 50px 10px 50px 10px;
+    border: 5px rgb(239, 233, 229) inset;
+    color: rgb(233, 117, 15);
+    margin: 0px 0px 10px 0px;
+}
+
+.txt-service_box{
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    border: 1px rgb(191, 105, 35) inset;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.service-center h1{
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(233, 109, 15);
+}
+
+.header-service_box h1{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    position: relative;
+}
+
+
+.line{
+    width: 150px;
+    background-color: rgb(228, 146, 15);
+    height: 0px;
+    padding: 2px 0px 0px 0px;
+    margin: 10px 0px 15px 0px;
+}
+
+
+.txt-service_box span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 0px 20px 0px;
+}
+
+
+.txt-service_box ul{
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.txt-service_box li{
+    list-style-type:"~ ";
+    text-align: justify;
+}
+
+.txt-service_box ul span{
+    font-weight: 600;
+}
+
+.paragraph-servic{
+    text-align: center;
+}
