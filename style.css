@@ -951,3 +951,43 @@ button:hover {
 .page-contact{
   font-style: italic;
 }
+
+.map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    height: 95vh;
+}
+
+.map_box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    flex-direction: row;
+    font-size: 1.1rem;
+}
+
+iframe{
+    width: 50%;
+    height: 70%;
+    filter:invert(100%);
+}
+
+.map-header_box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.map_txt-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.map_txt-box2 span{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
