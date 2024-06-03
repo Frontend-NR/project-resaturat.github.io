@@ -1046,6 +1046,8 @@ iframe{
 
 .services-container{
    padding: 20px 20px;
+  border-top: 1px rgb(226, 146, 16) inset;
+   border-bottom: 1px rgb(226, 146, 16) inset;
 }
 
 .services-box{
